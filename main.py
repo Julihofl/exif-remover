@@ -20,11 +20,11 @@ def get_output_path(input_path: str) -> str:
 def main() -> None:
     images_paths: List[str] = filedialog.askopenfilenames(
         title='Select images to remove EXIF data',
-        filetypes=[("Bilddateien", "*.png;*.jpg;*.jpeg;*.bmp;*.gif"),
-               ("PNG Dateien", "*.png"),
-               ("JPEG Dateien", "*.jpg;*.jpeg"),
-               ("BMP Dateien", "*.bmp"),
-               ("GIF Dateien", "*.gif")]
+        filetypes=[("Image files", "*.png;*.jpg;*.jpeg;*.bmp;*.gif"),
+               ("PNG files", "*.png"),
+               ("JPEG files", "*.jpg;*.jpeg"),
+               ("BMP files", "*.bmp"),
+               ("GIF files", "*.gif")]
         )
 
     for path in images_paths:
